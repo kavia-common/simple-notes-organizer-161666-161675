@@ -1,45 +1,28 @@
-# vue-kavia
+# Simple Notes - Frontend
 
-This template should help get you started developing with Vue 3 in Vite.
+A modern and minimalistic Vue 3 application for creating, editing, viewing, and deleting notes.  
+Layout includes a header, a sidebar for the notes list and search, and a main content area for editing/viewing a note.
 
-## Recommended IDE Setup
+Features
+- Create note
+- Edit note
+- Delete note
+- List all notes
+- View note details
+- Local persistence via localStorage
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+Tech
+- Vue 3 with Vite
+- TypeScript
+- Pinia (state management)
+- Vue Router
 
-## Type Support for `.vue` Imports in TS
+Getting started
+- Install dependencies: npm install
+- Run dev server: npm run dev
+- Build for production: npm run build
+- Lint: npm run lint
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Run Unit Tests with [Vitest](https://vitest.dev/)
-
-```sh
-npm run test:unit
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+Notes storage
+- Notes are stored locally in the browser (localStorage) under key notes_frontend__notes
+- No environment variables are required for this frontend app

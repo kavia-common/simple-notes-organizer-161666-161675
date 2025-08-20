@@ -1,9 +1,13 @@
 <script setup lang="ts">
-import TheWelcome from '../components/TheWelcome.vue'
+import { onMounted } from 'vue'
+import { useRouter } from 'vue-router'
+
+const router = useRouter()
+onMounted(() => {
+  router.replace({ name: 'home' })
+})
 </script>
 
 <template>
-  <main>
-    <TheWelcome />
-  </main>
+  <main />
 </template>
