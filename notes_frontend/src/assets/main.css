@@ -1,0 +1,24 @@
+@import './base.css';
+
+:root {
+  --primary: #42b983;
+  --secondary: #35495e;
+  --accent: #ffcc00;
+}
+
+#app {
+  margin: 0 auto;
+  font-weight: normal;
+  width: 100%;
+  max-width: 1200px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary);
+  transition: 0.2s ease;
+}
+
+a:hover {
+  opacity: 0.9;
+}
